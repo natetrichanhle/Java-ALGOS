@@ -83,7 +83,7 @@ class SLL {
         }
         while(runner.next != null){
             if(runner.next.data == data){
-                runner = runner.next.next;
+                runner.next = runner.next.next;
             } else {
                 runner = runner.next;
             }
