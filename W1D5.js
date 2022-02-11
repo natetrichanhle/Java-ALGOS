@@ -43,7 +43,7 @@ class SLL {
     printNthToLast(n) {
         this.reverse()
         let runner = this.head;
-        let count = -1;
+        let count = 1;
         while(runner) {
             runner = runner.next;
             count ++;
