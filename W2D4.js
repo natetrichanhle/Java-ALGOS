@@ -179,7 +179,7 @@ function countStack(stack) {
 // assume node.data are integers
 function isStackSorted(stack) {
     let tempStack = new slStack();
-    let currAmount = 0;
+    let currAmount = -Infinity;
     let isSorted = true;
     while(stack.top){
         // console.log(tempStack)
