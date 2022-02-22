@@ -99,4 +99,5 @@ let dll = new DLList();
 dll.addHead(new DLLNode(1)).addTail(new DLLNode(3)).addHead(new DLLNode(2)).addTail(new DLLNode(4));
 console.log(dll.removeHead());
 console.log(dll.removeTail());
+console.log(dll.size());
 console.log(dll);
