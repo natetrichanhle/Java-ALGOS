@@ -52,7 +52,7 @@ class DLList {
     size() { 
         let count = 0;
         let runner = this.head;
-        if(runner){
+        while(runner){
             count ++;
             runner = runner.next;
         }
