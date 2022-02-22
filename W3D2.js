@@ -50,12 +50,9 @@ class DLList {
 
     // return length
     size() { 
-        if(this.isEmpty()){
-            return 0;
-        }
-        let count = 1;
+        let count = 0;
         let runner = this.head;
-        if(runner.next){
+        if(runner){
             count ++;
             runner = runner.next;
         }
@@ -96,8 +93,12 @@ class DLList {
 // remove a few nodes from tail
 // print the DLL -> did the correct nodes get removed?
 let dll = new DLList();
+console.log("-------- Add Head/Add Tail --------");
 dll.addHead(new DLLNode(1)).addTail(new DLLNode(3)).addHead(new DLLNode(2)).addTail(new DLLNode(4));
+console.log(dll);
+console.log("Size:", dll.size());
+console.log("----- Remove Head/Remove Tail -----");
 console.log(dll.removeHead());
 console.log(dll.removeTail());
-console.log(dll.size());
 console.log(dll);
+console.log("Size:", dll.size());
