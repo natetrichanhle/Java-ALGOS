@@ -97,4 +97,6 @@ class DLList {
 // print the DLL -> did the correct nodes get removed?
 let dll = new DLList();
 dll.addHead(new DLLNode(1)).addTail(new DLLNode(3)).addHead(new DLLNode(2)).addTail(new DLLNode(4));
+console.log(dll.removeHead());
+console.log(dll.removeTail());
 console.log(dll);
